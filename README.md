@@ -1,25 +1,25 @@
 # Hipposoft Landing Page
 
-Hipposoft'un fractional teknoloji ekibi hizmetini anlatan, Claude Design çıktısından üretime hazır web sayfasına dönüştürülmüş landing page.
+A production-ready landing page for Hipposoft's fractional technology team service, converted from a Claude Design concept into a responsive web experience.
 
-## Yerelde çalıştırma
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Üretim çıktısı almak için:
+To create a production build:
 
 ```bash
 npm run build
 ```
 
-Build çıktısı `dist/` klasörüne yazılır.
+The production output is generated in the `dist/` directory.
 
-## Yapı
+## Project structure
 
-- `index.html`: Sayfa içeriği ve Hippo asistan davranışı
-- `styles.css`: Responsive ve erişilebilirlik katmanı
-- `app.js`: CTA bağlantıları
-- `support.js`: Claude Design bileşen runtime'ı
+- `index.html`: Page content and Hippo assistant behavior
+- `styles.css`: Responsive design and accessibility layer
+- `app.js`: Call-to-action interactions
+- `support.js`: Claude Design component runtime
