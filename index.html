@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hipposoft, KOBİ'ler için esnek ve ölçeklenebilir teknoloji ekipleri kurar.">
+<meta name="theme-color" content="#0770B0">
+<title>Hipposoft | Fractional Teknoloji Ekibiniz</title>
+<link rel="stylesheet" href="./styles.css">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0}
+  ::selection{background:#cfe6f6}
+  @keyframes hb { 0%,80%,100%{opacity:.3;transform:translateY(0)} 40%{opacity:1;transform:translateY(-3px)} }
+  @keyframes hippopulse { 0%{box-shadow:0 10px 30px -6px rgba(7,112,176,0.45),0 0 0 0 rgba(7,112,176,0.4)} 70%{box-shadow:0 10px 30px -6px rgba(7,112,176,0.45),0 0 0 16px rgba(7,112,176,0)} 100%{box-shadow:0 10px 30px -6px rgba(7,112,176,0.45),0 0 0 0 rgba(7,112,176,0)} }
+  @keyframes hippopop { 0%{opacity:0;transform:translateY(12px) scale(.96)} 100%{opacity:1;transform:translateY(0) scale(1)} }
+</style>
+</helmet>
+
+<div style="font-family:Inter,system-ui,sans-serif;color:#1A1D24;background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5">
+
+  <!-- ===================== NAV ===================== -->
+  <header style="position:sticky;top:0;z-index:50;height:72px;background:rgba(255,255,255,0.88);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid #DEDFE0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px;height:72px;display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:26px;height:26px;border-radius:7px;background:#0770B0;display:inline-flex;align-items:center;justify-content:center">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16M18 4v16M6 12h12"/></svg>
+        </span>
+        <span style="font-weight:800;font-size:19px;letter-spacing:-0.02em">hipposoft</span>
+      </div>
+      <button style="border:none;cursor:pointer;background:#0770B0;color:#fff;font-family:inherit;font-weight:600;font-size:15px;height:44px;padding:0 24px;border-radius:100px;box-shadow:0 6px 18px rgba(7,112,176,0.30);transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-1px);box-shadow:0 10px 26px rgba(7,112,176,0.38)">Ücretsiz Danışma Toplantısı Planla</button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section style="position:relative;overflow:hidden;background:#fff">
+    <div aria-hidden="true" style="position:absolute;top:-120px;right:-80px;width:460px;height:460px;border-radius:50%;background:#E6F2FA;opacity:0.4;pointer-events:none"></div>
+    <div aria-hidden="true" style="position:absolute;bottom:40px;left:-60px;width:180px;height:180px;border-radius:50%;background:#FEF7EF;opacity:0.5;pointer-events:none"></div>
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:80px 80px 88px;display:grid;grid-template-columns:560px 1fr;gap:64px;align-items:center;min-height:560px">
+
+      <!-- Left -->
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:7px;background:#E6F2FA;color:#0770B0;font-weight:600;font-size:13px;padding:7px 14px;border-radius:100px;margin-bottom:24px">
+          <span style="width:6px;height:6px;border-radius:50%;background:#0770B0"></span>
+          Fractional Tech Team · Since 2012
+        </span>
+        <h1 style="font-weight:800;font-size:47px;line-height:1.08;letter-spacing:-0.03em;margin:0 0 22px;color:#1A1D24;text-wrap:balance">{{ headline }}</h1>
+        <p style="font-size:17px;line-height:1.6;color:#4A5060;margin:0 0 32px;max-width:520px">Hipposoft, KOBİ'lere CTO'dan yazılım geliştiriciye kadar ihtiyaç duydukları teknik uzmanlığı esnek ve ölçeklenebilir bir model ile sunuyor. Tam zamanlı işe alım yok, sabit gider yok.</p>
+        <button style="border:none;cursor:pointer;background:#0770B0;color:#fff;font-family:inherit;font-weight:600;font-size:16px;height:52px;padding:0 32px;border-radius:100px;box-shadow:0 8px 24px rgba(7,112,176,0.30);transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-2px);box-shadow:0 14px 32px rgba(7,112,176,0.40)">Ücretsiz Danışma Toplantısı Planla</button>
+        <p style="display:flex;align-items:center;gap:8px;font-size:13.5px;color:#8A909E;margin:16px 0 0">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Gizli ücret yok · İstediğinizde sonlandırın
+        </p>
+      </div>
+
+      <!-- Right: modular team builder -->
+      <div class="team-visual" role="img" aria-label="Hipposoft merkezinde birleşen CTO, yazılımcı, ürün yöneticisi, tasarımcı ve analist rollerinden oluşan ölçeklenebilir ekip">
+        <div class="team-orbit" aria-hidden="true"></div>
+
+        <div class="role-card role-card--cto">
+          <span class="role-avatar role-avatar--navy">CT</span>
+          <span><strong>CTO</strong><small>Teknik liderlik</small></span>
+          <i>+</i>
+        </div>
+        <div class="role-card role-card--developer">
+          <span class="role-avatar role-avatar--blue">YD</span>
+          <span><strong>Yazılımcı</strong><small>Ürün geliştirme</small></span>
+          <i>+</i>
+        </div>
+        <div class="role-card role-card--pm">
+          <span class="role-avatar role-avatar--orange">PM</span>
+          <span><strong>PM</strong><small>Süreç &amp; teslimat</small></span>
+          <i>+</i>
+        </div>
+        <div class="role-card role-card--designer">
+          <span class="role-avatar role-avatar--violet">UX</span>
+          <span><strong>Tasarımcı</strong><small>Deneyim tasarımı</small></span>
+          <i>+</i>
+        </div>
+        <div class="role-card role-card--analyst">
+          <span class="role-avatar role-avatar--green">VA</span>
+          <span><strong>Analist</strong><small>Veri &amp; içgörü</small></span>
+          <i>+</i>
+        </div>
+
+        <div class="team-core">
+          <span class="team-core__mark"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 4v16M18 4v16M6 12h12"/></svg></span>
+          <strong>Ekibin hazır</strong>
+          <small>Tek merkez · 5 uzman</small>
+          <span class="team-core__status"><i></i> 2 haftada aktif</span>
+        </div>
+
+        <div class="team-hippo" aria-hidden="true">
+          <span class="team-hippo__bubble">Doğru ekip, tam zamanında.</span>
+          <svg width="52" height="52" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="18" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><ellipse cx="46" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS BAR ===================== -->
+  <section style="background:#22262F">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px;height:auto;min-height:100px;display:grid;grid-template-columns:repeat(3,1fr);align-items:center">
+      <div style="text-align:center;padding:26px 24px">
+        <div style="font-size:40px;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1">%70</div>
+        <div style="font-size:14px;color:#8A909E;margin-top:7px">Operasyonel maliyet azalması</div>
+      </div>
+      <div style="text-align:center;padding:26px 24px;border-left:1px solid rgba(255,255,255,0.12);border-right:1px solid rgba(255,255,255,0.12)">
+        <div style="font-size:40px;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1">$130.000</div>
+        <div style="font-size:14px;color:#8A909E;margin-top:7px">Ortalama yıllık tasarruf (5 kişilik ekip)</div>
+      </div>
+      <div style="text-align:center;padding:26px 24px">
+        <div style="font-size:40px;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1">12+ yıl</div>
+        <div style="font-size:14px;color:#8A909E;margin-top:7px">Sektör deneyimi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section style="background:#F7F8FD;padding:80px 0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px;display:grid;grid-template-columns:1fr 480px;gap:72px;align-items:center">
+      <div style="max-width:600px">
+        <span style="display:inline-block;background:#FEF7EF;color:#C2691C;font-weight:600;font-size:13px;padding:7px 14px;border-radius:100px;margin-bottom:20px">Tanıdık geliyor mu?</span>
+        <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.025em;line-height:1.15;margin:0 0 24px;color:#1A1D24;text-wrap:balance">Büyüyen her işletme er ya da geç aynı soruyla karşılaşır.</h2>
+        <p style="font-size:16px;line-height:1.65;color:#4A5060;margin:0 0 16px">Yazılım geliştirme, ürün yönetimi, veri analizi, UI/UX tasarım. Her birini ayrı ayrı yönetmek için ya tam zamanlı ekipler kuruyorsunuz, ya da ajanslar arasında gidip geliyorsunuz.</p>
+        <p style="font-size:16px;line-height:1.65;color:#4A5060;margin:0 0 16px">Tam zamanlı ekip pahalı. Ajanslar yavaş. İkisi de sizin işinizi gerçekten bilmiyor.</p>
+        <p style="font-size:16px;line-height:1.65;color:#4A5060;margin:0 0 24px">Ve siz, teknolojiyle uğraşmak yerine asıl işinize odaklanmak istiyorsunuz.</p>
+        <p style="font-size:19px;font-weight:700;color:#0770B0;margin:0;letter-spacing:-0.01em">Hipposoft farklı çalışıyor.</p>
+      </div>
+
+      <!-- Comparison card -->
+      <div style="background:#fff;border:1px solid #DEDFE0;border-radius:16px;padding:8px;box-shadow:0 12px 40px -12px rgba(26,29,36,0.12)">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+          <div style="padding:18px 14px;border-radius:11px">
+            <div style="font-size:13px;font-weight:700;color:#1A1D24;margin-bottom:14px">Tam zamanlı ekip</div>
+            <div style="display:flex;flex-direction:column;gap:11px;font-size:12.5px;color:#8A909E">
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#c44">✕</span>Yüksek maliyet</span>
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#c44">✕</span>Uzun işe alım</span>
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#c44">✕</span>Sabit gider</span>
+            </div>
+          </div>
+          <div style="padding:18px 14px;border-radius:11px">
+            <div style="font-size:13px;font-weight:700;color:#1A1D24;margin-bottom:14px">Ajans</div>
+            <div style="display:flex;flex-direction:column;gap:11px;font-size:12.5px;color:#8A909E">
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#c44">✕</span>Yavaş</span>
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#c44">✕</span>Bağlam eksikliği</span>
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#c44">✕</span>Proje bazlı</span>
+            </div>
+          </div>
+          <div style="padding:18px 14px;border-radius:11px;background:#E6F2FA;border:1.5px solid #0770B0">
+            <div style="font-size:13px;font-weight:800;color:#0770B0;margin-bottom:14px">Hipposoft</div>
+            <div style="display:flex;flex-direction:column;gap:11px;font-size:12.5px;color:#1A1D24;font-weight:500">
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#0770B0">✓</span>Hızlı başlangıç</span>
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#0770B0">✓</span>Düşük maliyet</span>
+              <span style="display:flex;gap:6px;align-items:flex-start"><span style="color:#0770B0">✓</span>İş bilgisi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ÇÖZÜM / NASIL ÇALIŞIR ===================== -->
+  <section style="background:#fff;padding:88px 0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px">
+      <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.025em;line-height:1.15;margin:0 auto 56px;color:#1A1D24;text-align:center;max-width:680px;text-wrap:balance">İşinizin bir parçası gibi çalışan teknoloji ekibi.</h2>
+      <div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+        <div aria-hidden="true" style="position:absolute;top:34px;left:16.6%;right:16.6%;height:2px;background:#0770B0;opacity:0.3"></div>
+
+        <div style="position:relative;text-align:center;padding:0 8px">
+          <div style="width:68px;height:68px;border-radius:50%;background:#0770B0;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;box-shadow:0 8px 22px rgba(7,112,176,0.28)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.3-4.3"/></svg>
+          </div>
+          <div style="font-size:12px;font-weight:700;color:#0770B0;letter-spacing:0.04em;margin-bottom:8px">01 · ANALİZ</div>
+          <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;color:#1A1D24;letter-spacing:-0.01em">Mevcut durumu anlıyoruz</h3>
+          <p style="font-size:14.5px;line-height:1.6;color:#4A5060;margin:0">İlk toplantıda teknoloji ve ürün altyapınızı inceliyoruz. Neye ihtiyacınız olduğunu, neyin çalışmadığını net görüyoruz.</p>
+        </div>
+
+        <div style="position:relative;text-align:center;padding:0 8px">
+          <div style="width:68px;height:68px;border-radius:50%;background:#0770B0;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;box-shadow:0 8px 22px rgba(7,112,176,0.28)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9.5" r="2.3"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M16 14.5c2.2 0 4 1.8 4 4.5"/></svg>
+          </div>
+          <div style="font-size:12px;font-weight:700;color:#0770B0;letter-spacing:0.04em;margin-bottom:8px">02 · EKİP KURULUMU</div>
+          <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;color:#1A1D24;letter-spacing:-0.01em">Ekibinizi 2 haftada kuruyoruz</h3>
+          <p style="font-size:14.5px;line-height:1.6;color:#4A5060;margin:0">İhtiyacınıza göre PM, yazılımcı, tasarımcı, analist atıyoruz. Uzun işe alım süreci yok.</p>
+        </div>
+
+        <div style="position:relative;text-align:center;padding:0 8px">
+          <div style="width:68px;height:68px;border-radius:50%;background:#0770B0;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;box-shadow:0 8px 22px rgba(7,112,176,0.28)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"><path d="M13 2 5 13.5h5.2L9.5 22 19 10h-5.6z"/></svg>
+          </div>
+          <div style="font-size:12px;font-weight:700;color:#0770B0;letter-spacing:0.04em;margin-bottom:8px">03 · ENTEGRASYON</div>
+          <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;color:#1A1D24;letter-spacing:-0.01em">Şirketinizin bir parçası gibi çalışıyoruz</h3>
+          <p style="font-size:14.5px;line-height:1.6;color:#4A5060;margin:0">Slack'inizde, toplantılarınızda, hedeflerinizde. Dışarıdan bir ajans değil, içeriden bir ekip gibi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HİZMETLER ===================== -->
+  <section style="background:#F7F8FD;padding:88px 0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px">
+      <div style="max-width:620px;margin-bottom:48px">
+        <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.025em;line-height:1.15;margin:0 0 14px;color:#1A1D24;text-wrap:balance">İhtiyacınız olan uzmanlık, tek çatı altında.</h2>
+        <p style="font-size:16.5px;line-height:1.6;color:#4A5060;margin:0">Hangi kapasiteye ihtiyaç duyduğunuzu siz belirleyin. Biz sağlayalım.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <!-- 1 -->
+        <div style="background:#fff;border:1px solid #DEDFE0;border-radius:14px;padding:26px;transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(26,29,36,0.18)">
+          <div style="width:48px;height:48px;border-radius:12px;background:#E6F2FA;display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8 5 12l4 4M15 8l4 4-4 4"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;color:#1A1D24">Yazılım Geliştirme</h3>
+          <p style="font-size:14px;line-height:1.6;color:#4A5060;margin:0">Ürününüzü hayata geçirecek yazılım ekibi.</p>
+        </div>
+        <!-- 2 -->
+        <div style="background:#fff;border:1px solid #DEDFE0;border-radius:14px;padding:26px;transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(26,29,36,0.18)">
+          <div style="width:48px;height:48px;border-radius:12px;background:#E6F2FA;display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2.5"/><path d="M9.5 4h5v2.2h-5z"/><path d="M9 10.5h6M9 14h4"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;color:#1A1D24">Ürün ve Proje Yönetimi</h3>
+          <p style="font-size:14px;line-height:1.6;color:#4A5060;margin:0">Önceliklendirme, roadmap ve teslimat.</p>
+        </div>
+        <!-- 3 -->
+        <div style="background:#fff;border:1px solid #DEDFE0;border-radius:14px;padding:26px;transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(26,29,36,0.18)">
+          <div style="width:48px;height:48px;border-radius:12px;background:#E6F2FA;display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M4 9.5h16M9.5 9.5V20"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;color:#1A1D24">UI/UX Tasarım</h3>
+          <p style="font-size:14px;line-height:1.6;color:#4A5060;margin:0">Kullanıcılarınızın sevdiği dijital deneyimler.</p>
+        </div>
+        <!-- 4 -->
+        <div style="background:#fff;border:1px solid #DEDFE0;border-radius:14px;padding:26px;transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(26,29,36,0.18)">
+          <div style="width:48px;height:48px;border-radius:12px;background:#E6F2FA;display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M7 20v-6M12 20V8M17 20v-9"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;color:#1A1D24">Veri Analitiği</h3>
+          <p style="font-size:14px;line-height:1.6;color:#4A5060;margin:0">Karar almayı kolaylaştıran veri içgörüleri.</p>
+        </div>
+        <!-- 5 -->
+        <div style="background:#fff;border:1px solid #DEDFE0;border-radius:14px;padding:26px;transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(26,29,36,0.18)">
+          <div style="width:48px;height:48px;border-radius:12px;background:#E6F2FA;display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 1 3.7 10.7c-.8.6-1.2 1.4-1.2 2.3h-5c0-.9-.4-1.7-1.2-2.3A6 6 0 0 1 12 3Z"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;color:#1A1D24">Teknoloji Danışmanlığı</h3>
+          <p style="font-size:14px;line-height:1.6;color:#4A5060;margin:0">Doğru teknolojiyle doğru yönde ilerleyin.</p>
+        </div>
+        <!-- 6 -->
+        <div style="background:#fff;border:1px solid #DEDFE0;border-radius:14px;padding:26px;transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-3px);box-shadow:0 14px 34px -14px rgba(26,29,36,0.18)">
+          <div style="width:48px;height:48px;border-radius:12px;background:#E6F2FA;display:flex;align-items:center;justify-content:center;margin-bottom:18px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 14 6v12L3 13.5z"/><path d="M14 9a3.2 3.2 0 0 1 0 6"/><path d="M6 14v4"/></svg>
+          </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 8px;color:#1A1D24">Dijital Pazarlama</h3>
+          <p style="font-size:14px;line-height:1.6;color:#4A5060;margin:0">Kitlenize ulaşın, dönüşüm oranınızı artırın.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:36px">
+        <a href="#" style="display:inline-flex;align-items:center;gap:7px;color:#0770B0;font-weight:600;font-size:15.5px;text-decoration:none">Hizmetleri Detaylı İncele
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HIPPO AI SECTION ===================== -->
+  <section style="position:relative;overflow:hidden;background:#fff;padding:84px 0;border-top:1px solid #DEDFE0">
+    <div aria-hidden="true" style="position:absolute;top:-90px;left:-70px;width:340px;height:340px;border-radius:50%;background:#E6F2FA;opacity:0.35;pointer-events:none"></div>
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 80px;display:grid;grid-template-columns:1fr 470px;gap:64px;align-items:center">
+
+      <!-- Left copy -->
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:22px">
+          <span style="width:60px;height:60px;border-radius:50%;background:#E6F2FA;display:flex;align-items:center;justify-content:center;flex:none">
+            <svg width="42" height="42" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="18" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><ellipse cx="46" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:7px;background:#E6F2FA;color:#0770B0;font-weight:600;font-size:13px;padding:7px 14px;border-radius:100px">AI Asistan · Hippo</span>
+        </div>
+        <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.025em;line-height:1.15;margin:0 0 18px;color:#1A1D24;text-wrap:balance">Aklınıza takılan her şeyi Hippo'ya sorun.</h2>
+        <p style="font-size:16.5px;line-height:1.65;color:#4A5060;margin:0 0 26px;max-width:520px">Maliyet, ekip kurulumu, sizin sektörünüze uygunluk. Hippo saniyeler içinde net yanıt veriyor ve size en uygun ekibi planlamanıza yardım ediyor. Toplantıyı beklemeden ilk adımı şimdi atın.</p>
+        <div style="display:flex;flex-direction:column;gap:13px;margin-bottom:30px">
+          <div style="display:flex;align-items:center;gap:11px;font-size:15px;color:#1A1D24;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Saniyeler içinde net yanıtlar</div>
+          <div style="display:flex;align-items:center;gap:11px;font-size:15px;color:#1A1D24;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Şirketinize özel tasarruf tahmini</div>
+          <div style="display:flex;align-items:center;gap:11px;font-size:15px;color:#1A1D24;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tek tıkla ücretsiz toplantıya geçiş</div>
+        </div>
+        <button onClick="{{ onOpen }}" style="border:none;cursor:pointer;background:#0770B0;color:#fff;font-family:inherit;font-weight:600;font-size:16px;height:52px;padding:0 30px;border-radius:100px;box-shadow:0 8px 24px rgba(7,112,176,0.30);transition:transform .15s,box-shadow .15s;display:inline-flex;align-items:center;gap:10px" style-hover="transform:translateY(-2px);box-shadow:0 14px 32px rgba(7,112,176,0.40)">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Hippo ile konuşmaya başla
+        </button>
+      </div>
+
+      <!-- Right: chat preview card -->
+      <div style="background:#fff;border:1px solid #DEDFE0;border-radius:22px;box-shadow:0 24px 60px -18px rgba(26,29,36,0.24);overflow:hidden">
+        <div style="background:#0770B0;padding:16px 18px;display:flex;align-items:center;gap:12px;color:#fff">
+          <span style="width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none">
+            <svg width="30" height="30" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="18" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><ellipse cx="46" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+          </span>
+          <div style="flex:1">
+            <div style="font-weight:700;font-size:16px;display:flex;align-items:center;gap:7px">Hippo <span style="width:7px;height:7px;border-radius:50%;background:#3ad07a"></span></div>
+            <div style="font-size:12px;color:#cfe6f6">Çevrimiçi · genellikle birkaç dakikada yanıtlar</div>
+          </div>
+        </div>
+        <div style="padding:20px;background:#F7F8FD">
+          <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:18px">
+            <span style="width:28px;height:28px;border-radius:50%;background:#E6F2FA;flex:none;display:flex;align-items:center;justify-content:center">
+              <svg width="20" height="20" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+            </span>
+            <div style="background:#fff;border:1px solid #DEDFE0;border-radius:4px 14px 14px 14px;padding:11px 14px;font-size:14px;line-height:1.55;color:#1A1D24;max-width:280px">Merhaba! Ben Hippo. Aşağıdakilerden birini seçin, hemen yanıtlayayım.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <sc-for list="{{ sectionChips }}" as="c" hint-placeholder-count="4">
+              <button onClick="{{ c.onClick }}" style="text-align:left;border:1px solid #DEDFE0;background:#fff;color:#0770B0;font-family:inherit;font-size:14px;font-weight:500;padding:12px 16px;border-radius:12px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:border-color .15s,background .15s" style-hover="border-color:#0770B0;background:#E6F2FA">
+                {{ c.label }}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0770B0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="padding:12px 16px;background:#fff;border-top:1px solid #DEDFE0;display:flex;gap:10px;align-items:center">
+          <button onClick="{{ onOpen }}" style="flex:1;text-align:left;border:1px solid #DEDFE0;background:#F7F8FD;color:#8A909E;font-family:inherit;font-size:14px;padding:11px 16px;border-radius:100px;cursor:pointer">Sorunuzu yazın...</button>
+          <button onClick="{{ onOpen }}" style="border:none;cursor:pointer;background:#0770B0;width:42px;height:42px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOSYAL KANIT ===================== -->
+  <section style="background:#fff;padding:88px 0">
+    <div style="max-width:1440px;margin:0 auto;padding:0 80px">
+      <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.025em;line-height:1.15;margin:0 0 48px;color:#1A1D24;text-align:center">Müşterilerimiz ne diyor?</h2>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <!-- card -->
+        <div style="position:relative;background:#F7F8FD;border:1px solid #DEDFE0;border-radius:16px;padding:30px 28px">
+          <span style="position:absolute;top:18px;right:26px;font-size:64px;line-height:1;font-weight:800;color:#E6F2FA;font-family:Georgia,serif">”</span>
+          <div style="display:flex;gap:3px;margin-bottom:16px;color:#F0A92B;font-size:15px">★★★★★</div>
+          <p style="font-size:15.5px;line-height:1.65;color:#1A1D24;margin:0 0 22px;font-weight:500">Hipposoft ile çalışmadan önce yazılım geliştirme için 3 farklı ajansla muhataptık. Şimdi tek bir ekip, tek bir iletişim noktası. Maliyetimiz %60 düştü.</p>
+          <div style="height:1px;background:#DEDFE0;margin-bottom:18px"></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="width:42px;height:42px;border-radius:50%;background:#E6F2FA;color:#0770B0;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center">İK</span>
+            <div>
+              <div style="font-size:14.5px;font-weight:700;color:#1A1D24">İsim Soyisim</div>
+              <div style="font-size:13px;color:#8A909E">Kurucu Ortak · Şirket A.Ş.</div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div style="position:relative;background:#F7F8FD;border:1px solid #DEDFE0;border-radius:16px;padding:30px 28px">
+          <span style="position:absolute;top:18px;right:26px;font-size:64px;line-height:1;font-weight:800;color:#E6F2FA;font-family:Georgia,serif">”</span>
+          <div style="display:flex;gap:3px;margin-bottom:16px;color:#F0A92B;font-size:15px">★★★★★</div>
+          <p style="font-size:15.5px;line-height:1.65;color:#1A1D24;margin:0 0 22px;font-weight:500">İki haftada devreye giren bir ürün ekibiyle çalışmak fark yarattı. Sürecimizi hiç değiştirmeden, kendi araçlarımızla ilerledik.</p>
+          <div style="height:1px;background:#DEDFE0;margin-bottom:18px"></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="width:42px;height:42px;border-radius:50%;background:#E6F2FA;color:#0770B0;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center">AY</span>
+            <div>
+              <div style="font-size:14.5px;font-weight:700;color:#1A1D24">İsim Soyisim</div>
+              <div style="font-size:13px;color:#8A909E">Operasyon Direktörü · Şirket B</div>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div style="position:relative;background:#F7F8FD;border:1px solid #DEDFE0;border-radius:16px;padding:30px 28px">
+          <span style="position:absolute;top:18px;right:26px;font-size:64px;line-height:1;font-weight:800;color:#E6F2FA;font-family:Georgia,serif">”</span>
+          <div style="display:flex;gap:3px;margin-bottom:16px;color:#F0A92B;font-size:15px">★★★★★</div>
+          <p style="font-size:15.5px;line-height:1.65;color:#1A1D24;margin:0 0 22px;font-weight:500">Tam zamanlı CTO maliyetine girmeden, ihtiyaç duyduğumuz teknik liderliği aldık. Yatırımcı görüşmelerinde fark yarattı.</p>
+          <div style="height:1px;background:#DEDFE0;margin-bottom:18px"></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="width:42px;height:42px;border-radius:50%;background:#E6F2FA;color:#0770B0;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center">MS</span>
+            <div>
+              <div style="font-size:14.5px;font-weight:700;color:#1A1D24">İsim Soyisim</div>
+              <div style="font-size:13px;color:#8A909E">CEO · Şirket C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- trust badges -->
+      <sc-if value="{{ showTrust }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:52px;text-align:center">
+          <div style="font-size:13px;font-weight:600;letter-spacing:0.06em;color:#8A909E;text-transform:uppercase;margin-bottom:22px">Bize güvenen ekipler</div>
+          <div style="display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;opacity:0.55">
+            <div style="display:flex;align-items:center;gap:8px;color:#8A909E"><span style="width:22px;height:22px;border-radius:6px;background:#8A909E"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Acme</span></div>
+            <div style="display:flex;align-items:center;gap:8px;color:#8A909E"><span style="width:0;height:0;border-left:11px solid transparent;border-right:11px solid transparent;border-bottom:19px solid #8A909E"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Vertex</span></div>
+            <div style="display:flex;align-items:center;gap:8px;color:#8A909E"><span style="width:22px;height:22px;border-radius:50%;background:#8A909E"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Orbit</span></div>
+            <div style="display:flex;align-items:center;gap:8px;color:#8A909E"><span style="width:22px;height:22px;background:#8A909E"></span><span style="font-weight:800;font-size:18px;letter-spacing:-0.02em">Nova</span></div>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section style="position:relative;overflow:hidden;background:#22262F;padding:80px 0">
+    <div aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:680px;height:680px;border-radius:50%;background:#0770B0;opacity:0.08;pointer-events:none"></div>
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:0 80px;text-align:center">
+      <h2 style="font-size:38px;font-weight:800;letter-spacing:-0.03em;line-height:1.12;margin:0 0 16px;color:#fff;text-wrap:balance">Teknoloji ekibinizi kurmaya hazır mısınız?</h2>
+      <p style="font-size:17px;color:#8A909E;margin:0 0 32px;max-width:560px;margin-left:auto;margin-right:auto">İlk adım ücretsiz. 30 dakikada ihtiyaçlarınızı değerlendiriyoruz.</p>
+      <button style="border:none;cursor:pointer;background:#0770B0;color:#fff;font-family:inherit;font-weight:600;font-size:17px;height:56px;padding:0 38px;border-radius:100px;box-shadow:0 8px 24px rgba(7,112,176,0.30);transition:transform .15s,box-shadow .15s" style-hover="transform:translateY(-2px);box-shadow:0 16px 36px rgba(7,112,176,0.45)">Ücretsiz Danışma Toplantısı Planla</button>
+      <p style="font-size:13.5px;color:#8A909E;margin:18px 0 0">Gizli ücret yok · Taahhüt yok · İstediğinizde sonlandırın</p>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section style="background:#F7F8FD;padding:88px 0">
+    <div style="max-width:760px;margin:0 auto;padding:0 80px">
+      <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.025em;line-height:1.15;margin:0 0 40px;color:#1A1D24;text-align:center">Aklınızdaki sorular</h2>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+          <div style="background:#fff;border:1px solid #DEDFE0;border-radius:12px;overflow:hidden">
+            <button onClick="{{ f.onToggle }}" style="width:100%;border:none;background:none;cursor:pointer;font-family:inherit;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px">
+              <span style="font-size:16px;font-weight:600;color:#1A1D24;letter-spacing:-0.01em">{{ f.q }}</span>
+              <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+                <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#0770B0;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;line-height:1">−</span>
+              </sc-if>
+              <sc-if value="{{ f.closed }}" hint-placeholder-val="{{ true }}">
+                <span style="flex:none;width:24px;height:24px;border-radius:50%;background:#E6F2FA;color:#0770B0;display:flex;align-items:center;justify-content:center;font-size:17px;line-height:1">+</span>
+              </sc-if>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <p style="font-size:14.5px;line-height:1.65;color:#4A5060;margin:0;padding:0 24px 22px">{{ f.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background:#22262F;color:#8A909E">
+    <div style="max-width:1440px;margin:0 auto;padding:40px 80px">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:40px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px">
+            <span style="width:24px;height:24px;border-radius:6px;background:#0770B0;display:inline-flex;align-items:center;justify-content:center">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M6 4v16M18 4v16M6 12h12"/></svg>
+            </span>
+            <span style="font-weight:800;font-size:18px;color:#fff;letter-spacing:-0.02em">hipposoft</span>
+          </div>
+          <div style="font-size:14px;max-width:280px">Teknoloji ekibiniz, esnek ve ölçeklenebilir.</div>
+        </div>
+        <div style="display:flex;gap:28px;flex-wrap:wrap;font-size:14px">
+          <a href="#" style="color:#8A909E;text-decoration:none">Yazılım</a>
+          <a href="#" style="color:#8A909E;text-decoration:none">PM</a>
+          <a href="#" style="color:#8A909E;text-decoration:none">Tasarım</a>
+          <a href="#" style="color:#8A909E;text-decoration:none">Analitik</a>
+          <a href="#" style="color:#8A909E;text-decoration:none">Danışmanlık</a>
+          <a href="#" style="color:#8A909E;text-decoration:none">Pazarlama</a>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:22px;font-size:13px">
+        <span>© 2025 Hipposoft. Tüm hakları saklıdır.</span>
+        <span style="display:flex;gap:18px">
+          <a href="#" style="color:#8A909E;text-decoration:none">Gizlilik Politikası</a>
+          <span style="opacity:0.5">·</span>
+          <a href="#" style="color:#8A909E;text-decoration:none">Kullanım Koşulları</a>
+        </span>
+        <a href="mailto:info@hipposoft.net" style="color:#fff;text-decoration:none;font-weight:500">info@hipposoft.net</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== HIPPO FLOATING ASSISTANT ===================== -->
+  <div style="position:fixed;right:24px;bottom:24px;z-index:90">
+
+    <sc-if value="{{ chatOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;right:0;bottom:84px;width:380px;height:560px;max-height:78vh;background:#fff;border-radius:20px;box-shadow:0 24px 64px -12px rgba(26,29,36,0.42);display:flex;flex-direction:column;overflow:hidden;border:1px solid #DEDFE0;animation:hippopop .22s ease-out">
+        <!-- header -->
+        <div style="background:#0770B0;padding:15px 18px;display:flex;align-items:center;gap:12px;color:#fff;flex:none">
+          <span style="width:42px;height:42px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none">
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="18" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><ellipse cx="46" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+          </span>
+          <div style="flex:1">
+            <div style="font-weight:700;font-size:16px;display:flex;align-items:center;gap:7px">Hippo <span style="width:7px;height:7px;border-radius:50%;background:#3ad07a"></span></div>
+            <div style="font-size:12px;color:#cfe6f6">Genellikle birkaç dakikada yanıtlar</div>
+          </div>
+          <button onClick="{{ onClose }}" style="border:none;background:rgba(255,255,255,0.15);color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:20px;line-height:1;display:flex;align-items:center;justify-content:center;flex:none">×</button>
+        </div>
+
+        <!-- messages -->
+        <div ref="{{ setScroller }}" style="flex:1;overflow-y:auto;padding:18px;background:#F7F8FD;display:flex;flex-direction:column;gap:12px">
+          <sc-for list="{{ messages }}" as="m" hint-placeholder-count="1">
+            <sc-if value="{{ m.isHippo }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;gap:8px;align-items:flex-end;max-width:92%">
+                <span style="width:28px;height:28px;border-radius:50%;background:#E6F2FA;flex:none;display:flex;align-items:center;justify-content:center">
+                  <svg width="20" height="20" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+                </span>
+                <div>
+                  <div style="background:#fff;border:1px solid #DEDFE0;border-radius:4px 14px 14px 14px;padding:11px 14px;font-size:14px;line-height:1.55;color:#1A1D24">{{ m.text }}</div>
+                  <sc-if value="{{ m.cta }}" hint-placeholder-val="{{ false }}">
+                    <button onClick="{{ onBook }}" style="margin-top:8px;border:none;cursor:pointer;background:#0770B0;color:#fff;font-family:inherit;font-weight:600;font-size:13px;padding:10px 16px;border-radius:100px;box-shadow:0 6px 16px rgba(7,112,176,0.3);display:inline-flex;align-items:center;gap:7px" style-hover="box-shadow:0 10px 22px rgba(7,112,176,0.42)">Ücretsiz Toplantı Planla
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </button>
+                  </sc-if>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ m.isUser }}" hint-placeholder-val="{{ false }}">
+              <div style="align-self:flex-end;max-width:85%;background:#0770B0;color:#fff;border-radius:14px 4px 14px 14px;padding:11px 14px;font-size:14px;line-height:1.55">{{ m.text }}</div>
+            </sc-if>
+          </sc-for>
+          <sc-if value="{{ typing }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;gap:8px;align-items:flex-end">
+              <span style="width:28px;height:28px;border-radius:50%;background:#E6F2FA;flex:none;display:flex;align-items:center;justify-content:center">
+                <svg width="20" height="20" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/></svg>
+              </span>
+              <div style="background:#fff;border:1px solid #DEDFE0;border-radius:4px 14px 14px 14px;padding:14px 16px;display:flex;gap:4px;align-items:center">
+                <span style="width:7px;height:7px;border-radius:50%;background:#8A909E;animation:hb 1s infinite"></span>
+                <span style="width:7px;height:7px;border-radius:50%;background:#8A909E;animation:hb 1s infinite .16s"></span>
+                <span style="width:7px;height:7px;border-radius:50%;background:#8A909E;animation:hb 1s infinite .32s"></span>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+
+        <!-- quick replies -->
+        <div style="display:flex;gap:7px;flex-wrap:wrap;padding:11px 14px 0;background:#F7F8FD;flex:none">
+          <sc-for list="{{ chips }}" as="c" hint-placeholder-count="4">
+            <button onClick="{{ c.onClick }}" style="border:1px solid #DEDFE0;background:#fff;color:#0770B0;font-family:inherit;font-size:12.5px;font-weight:500;padding:7px 12px;border-radius:100px;cursor:pointer" style-hover="background:#E6F2FA">{{ c.label }}</button>
+          </sc-for>
+        </div>
+
+        <!-- input -->
+        <div style="padding:12px 14px;background:#F7F8FD;display:flex;gap:8px;align-items:center;flex:none">
+          <input value="{{ input }}" onChange="{{ onInput }}" onKeyDown="{{ onKey }}" placeholder="Sorunuzu yazın..." style="flex:1;border:1px solid #DEDFE0;border-radius:100px;padding:11px 16px;font-family:inherit;font-size:14px;outline:none;background:#fff;color:#1A1D24" />
+          <button onClick="{{ onSend }}" style="border:none;cursor:pointer;background:#0770B0;width:42px;height:42px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg></button>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- tooltip -->
+    <sc-if value="{{ tip }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;right:80px;bottom:16px;white-space:nowrap;background:#fff;border:1px solid #DEDFE0;box-shadow:0 8px 24px -8px rgba(26,29,36,0.22);border-radius:14px 14px 4px 14px;padding:11px 16px;font-size:13.5px;color:#1A1D24;font-weight:600;animation:hippopop .22s ease-out">Bir sorunuz mu var? Bana sorun.</div>
+    </sc-if>
+
+    <!-- FAB -->
+    <button onClick="{{ onOpen }}" style="position:relative;width:64px;height:64px;border-radius:50%;border:none;cursor:pointer;background:#fff;display:flex;align-items:center;justify-content:center;padding:0;animation:hippopulse 2.6s ease-out infinite;transition:transform .15s" style-hover="transform:scale(1.06)">
+      <svg width="46" height="46" viewBox="0 0 64 64" fill="none"><ellipse cx="18" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="46" cy="16" rx="7" ry="6" fill="#0770B0"/><ellipse cx="18" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><ellipse cx="46" cy="16.5" rx="3" ry="2.6" fill="#9AC8E6"/><rect x="9" y="14" width="46" height="41" rx="19" fill="#0770B0"/><circle cx="24" cy="28" r="5" fill="#fff"/><circle cx="40" cy="28" r="5" fill="#fff"/><circle cx="25.5" cy="29" r="2.4" fill="#16344a"/><circle cx="41.5" cy="29" r="2.4" fill="#16344a"/><rect x="17" y="36" width="30" height="19" rx="10.5" fill="#5AA7D6"/><ellipse cx="27" cy="46" rx="2.5" ry="3.3" fill="#25587a"/><ellipse cx="37" cy="46" rx="2.5" ry="3.3" fill="#25587a"/></svg>
+      <span style="position:absolute;top:3px;right:3px;width:14px;height:14px;border-radius:50%;background:#3ad07a;border:2.5px solid #fff"></span>
+    </button>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;headlineVariant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Uzun (değer odaklı)&quot;,&quot;Kısa (etkili)&quot;],&quot;default&quot;:&quot;Uzun (değer odaklı)&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showTrustBadges&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { openIndex: 0, chatOpen: false, tip: false, typing: false, input: '', messages: [] };
+
+  LABELS = [
+    'Maliyeti nasıl %70 azaltıyorsunuz?',
+    'Ekip 2 haftada nasıl kuruluyor?',
+    'Benim şirketime uygun mu?',
+    'Fiyatlandırma nasıl işliyor?',
+  ];
+
+  renderVals() {
+    const variant = this.props.headlineVariant ?? 'Uzun (değer odaklı)';
+    const headline = variant === 'Kısa (etkili)'
+      ? 'Teknoloji ekibini kur, maliyetini %70 azalt.'
+      : 'Tam zamanlı ekip maliyeti olmadan tam performans teknoloji yönetimi.';
+
+    const data = [
+      { q: 'Fractional hizmet modeli tam zamanlı istihdamdan nasıl farklı?', a: 'Tam zamanlı bir çalışan işe alırken en az 3 ila 6 ay süren bir süreçle karşılaşırsınız; ek olarak maaş, sigorta, ekipman ve ofis maliyetleri gelir. Bizimle 2 haftada çalışmaya başlarsınız, sadece kullandığınız kadar ödersiniz.' },
+      { q: 'Hangi büyüklükteki şirketlerle çalışıyorsunuz?', a: 'Ağırlıklı olarak 10 ila 200 kişilik KOBİ\u2019lerle çalışıyoruz. Teknoloji altyapısını büyütmek isteyen ama tam zamanlı ekip kurmak için hazır olmayan şirketler için ideal bir modeliz.' },
+      { q: 'Ekip üyeleriniz hangi zaman diliminde çalışıyor?', a: 'Türkiye saatiyle standart iş saatlerinde çalışıyoruz. Proje gerektiğinde esnek çözümler üretebiliyoruz.' },
+      { q: 'Sözleşme süresi ne kadar?', a: 'Minimum taahhüt yok. Aylık veya proje bazlı çalışabiliyoruz. İstediğiniz zaman sonlandırabilirsiniz.' },
+      { q: 'Mevcut ekibimizle nasıl entegre oluyorsunuz?', a: 'Mevcut iş araçlarınıza (Slack, Jira, Notion, vb.) entegre oluyoruz. Süreçlerinizi değiştirmenize gerek yok.' },
+    ];
+
+    const faqs = data.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      open: this.state.openIndex === i,
+      closed: this.state.openIndex !== i,
+      onToggle: () => this.setState(s => ({ openIndex: s.openIndex === i ? -1 : i })),
+    }));
+
+    return {
+      headline,
+      showTrust: this.props.showTrustBadges ?? true,
+      faqs,
+      chatOpen: this.state.chatOpen,
+      tip: this.state.tip,
+      typing: this.state.typing,
+      input: this.state.input,
+      messages: this.state.messages.map(m => ({ ...m, isUser: m.role === 'user', isHippo: m.role === 'hippo', cta: !!m.cta })),
+      chips: this.LABELS.map(l => ({ label: l, onClick: () => this.send(l) })),
+      sectionChips: this.LABELS.map(l => ({ label: l, onClick: () => this.openChat(l) })),
+      onOpen: () => this.toggle(),
+      onClose: () => this.setState({ chatOpen: false }),
+      onInput: (e) => this.setState({ input: e.target.value }),
+      onKey: (e) => { if (e.key === 'Enter') { e.preventDefault(); this.submit(); } },
+      onSend: () => this.submit(),
+      onBook: () => this.book(),
+      setScroller: (el) => { this._scroller = el; },
+    };
+  }
+
+  componentDidMount() {
+    this._tip = setTimeout(() => { if (!this.state.chatOpen) this.setState({ tip: true }); }, 3400);
+  }
+  componentWillUnmount() { clearTimeout(this._tip); }
+  componentDidUpdate() { if (this._scroller) this._scroller.scrollTop = this._scroller.scrollHeight; }
+
+  greeting() {
+    return { role: 'hippo', text: 'Merhaba! Ben Hippo. Hipposoft hakkında ne merak ediyorsanız sorabilir, size en uygun teknoloji ekibini birlikte planlayabiliriz.' };
+  }
+
+  toggle() {
+    this.setState(s => ({ chatOpen: !s.chatOpen, tip: false, messages: s.messages.length ? s.messages : [this.greeting()] }));
+  }
+
+  openChat(seed) {
+    this.setState(s => ({ chatOpen: true, tip: false, messages: s.messages.length ? s.messages : [this.greeting()] }));
+    if (seed) setTimeout(() => this.send(seed), 320);
+  }
+
+  submit() {
+    const t = (this.state.input || '').trim();
+    if (!t) return;
+    this.setState({ input: '' });
+    this.send(t);
+  }
+
+  send(text) {
+    this.setState(s => ({ messages: [...s.messages, { role: 'user', text }], typing: true }));
+    this.respond(text);
+  }
+
+  book() {
+    this.setState(s => ({ messages: [...s.messages, { role: 'hippo', text: 'Harika! Ücretsiz danışma toplantısı 30 dakika sürüyor ve hiçbir taahhüt içermiyor. Size uygun bir zaman seçtiğinizde ekibinizi birlikte planlamaya başlıyoruz.' }] }));
+  }
+
+  pushHippo(m) {
+    this.setState(s => ({ typing: false, messages: [...s.messages, { role: 'hippo', text: m.text, cta: !!m.cta }] }));
+  }
+
+  delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+  async respond(text) {
+    const scripted = this.match(text);
+    if (scripted) { await this.delay(680); this.pushHippo(scripted); return; }
+    let answer = null;
+    try {
+      if (window.claude && window.claude.complete) {
+        const prompt = "Sen Hippo'sun, Hipposoft'un samimi AI asistanisin. Hipposoft, KOBI'lere esnek (fractional) teknoloji ekibi saglar: CTO, yazilimci, urun/proje yoneticisi, UI/UX tasarimci, veri analisti, teknoloji danismani ve dijital pazarlamaci. Avantajlar: %70 maliyet azalmasi, 2 haftada ekip kurulumu, minimum taahhut yok, mevcut araclara (Slack, Jira, Notion) entegrasyon, 12+ yil deneyim. En fazla 3 cumleyle, Turkce ve samimi yanit ver. Em dash kullanma. Yanitin sonunda kullaniciyi nazikce ucretsiz danisma toplantisi planlamaya yonlendir. Soru: " + text;
+        answer = await window.claude.complete({ messages: [{ role: 'user', content: prompt }] });
+      }
+    } catch (e) { answer = null; }
+    if (!answer) {
+      await this.delay(420);
+      answer = 'Bunu en doğru şekilde yanıtlamak için kısa bir görüşme en hızlısı olur. 30 dakikalık ücretsiz danışma toplantısında ihtiyacınızı netleştirip size özel bir plan çıkaralım.';
+    }
+    this.pushHippo({ text: String(answer).trim(), cta: true });
+  }
+
+  match(text) {
+    const t = (text || '').toLocaleLowerCase('tr');
+    const has = (...k) => k.some(x => t.includes(x));
+    if (has('merhaba', 'selam', 'naber', 'iyi günler')) return { text: 'Merhaba! Size nasıl yardımcı olabilirim? Maliyet, ekip kurulumu, uygunluk ya da fiyatlandırma hakkında sorabilirsiniz.' };
+    if (has('toplantı', 'randevu', 'görüşme', 'planla', 'demo')) return { text: 'Harika! Ücretsiz danışma toplantısı 30 dakika sürüyor ve hiçbir taahhüt içermiyor. Hemen planlayalım.', cta: true };
+    if (has('maliyet', '%70', '70', 'tasarruf', 'pahalı', 'ucuz', 'bütçe', 'para', 'masraf')) return { text: '%70 azalmayı; tam zamanlı maaş, sigorta, ofis ve ekipman giderlerini ortadan kaldırarak sağlıyoruz. Sadece kullandığınız uzmanlık kadar ödüyorsunuz ve 5 kişilik bir ekipte bu yılda ortalama 130 bin dolar tasarruf demek. Size özel rakamı bir görüşmede çıkarabiliriz.', cta: true };
+    if (has('2 hafta', 'hafta', 'ne kadar süre', 'süre', 'başla', 'kur', 'işe alım')) return { text: 'İhtiyacınızı ilk görüşmede netleştiriyoruz, ardından PM, yazılımcı, tasarımcı ve analistten oluşan ekibi 2 hafta içinde devreye alıyoruz. Uzun işe alım süreçleri yok. Hangi rollere ihtiyaç duyduğunuzu konuşmak ister misiniz?', cta: true };
+    if (has('uygun', 'bana göre', 'benim için', 'kobi', 'küçük', 'startup', 'şirketim', 'kaç kişi')) return { text: 'Genellikle 10 ila 200 kişilik, teknolojisini büyütmek isteyen ama tam zamanlı ekip kurmaya henüz hazır olmayan şirketlerle çalışıyoruz. Sektörünüzü ve hedefinizi anlatırsanız uygun olup olmadığımızı netçe söyleyebilirim.', cta: true };
+    if (has('fiyat', 'ücret', 'sözleşme', 'taahhüt', 'ödeme', 'abonelik', 'paket')) return { text: 'Minimum taahhüt yok; aylık ya da proje bazlı çalışıyoruz ve istediğiniz zaman sonlandırabilirsiniz. Net fiyat ihtiyacınıza göre değişir, 30 dakikalık ücretsiz görüşmede size özel bir teklif çıkarıyoruz.', cta: true };
+    if (has('entegre', 'entegrasyon', 'slack', 'jira', 'notion', 'araç')) return { text: 'Slack, Jira, Notion gibi mevcut araçlarınıza entegre oluyoruz ve süreçlerinizi değiştirmenize gerek kalmıyor. Dışarıdan bir ajans değil, içeriden bir ekip gibi çalışıyoruz.', cta: true };
+    if (has('hizmet', 'neler', 'yazılım', 'tasarım', 'pazarlama', 'analiz')) return { text: 'Yazılım geliştirme, ürün ve proje yönetimi, UI/UX, veri analitiği, teknoloji danışmanlığı ve dijital pazarlama; hepsi tek çatı altında. Hangi alanda desteğe ihtiyacınız var?' };
+    return null;
+  }
+}
+</script>
+<script src="./app.js" defer></script>
+</body>
+</html>
